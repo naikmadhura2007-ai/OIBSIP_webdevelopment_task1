@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber-Console Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&family=Outfit:wght@300;400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="background-atmosphere"></div>
+
+    <main class="device-wrapper">
+        <div class="device-chassis">
+            <!-- Decorative screws -->
+            <div class="screw screw-tl"></div>
+            <div class="screw screw-tr"></div>
+            <div class="screw screw-bl"></div>
+            <div class="screw screw-br"></div>
+
+            <!-- Branding/Model -->
+            <div class="device-header">
+                <span class="brand">EASY CALCULATOR</span>
+                <span class="model">MOD-X1</span>
+            </div>
+
+            <!-- Screen console -->
+            <div class="screen-container">
+                <div class="screen-flicker"></div>
+                <div class="screen-scanlines"></div>
+                <div class="display">
+                    <div class="previous-operand" id="previous-operand"></div>
+                    <div class="current-operand" id="current-operand">0</div>
+                </div>
+            </div>
+
+            <!-- Ventilation/Decor -->
+            <div class="vent-panel">
+                <div class="vent-slot"></div>
+                <div class="vent-slot"></div>
+                <div class="vent-slot"></div>
+            </div>
+
+            <!-- Buttons Grid -->
+            <div class="buttons-grid">
+                <button class="btn btn-danger btn-3d col-span-2" data-all-clear>POWER CLEAR</button>
+                <button class="btn btn-warning btn-3d" data-delete>DEL</button>
+                <button class="btn btn-primary btn-3d" data-operation>÷</button>
+
+                <button class="btn btn-3d" data-number>7</button>
+                <button class="btn btn-3d" data-number>8</button>
+                <button class="btn btn-3d" data-number>9</button>
+                <button class="btn btn-primary btn-3d" data-operation>×</button>
+
+                <button class="btn btn-3d" data-number>4</button>
+                <button class="btn btn-3d" data-number>5</button>
+                <button class="btn btn-3d" data-number>6</button>
+                <button class="btn btn-primary btn-3d" data-operation>−</button>
+
+                <button class="btn btn-3d" data-number>1</button>
+                <button class="btn btn-3d" data-number>2</button>
+                <button class="btn btn-3d" data-number>3</button>
+                <button class="btn btn-primary btn-3d" data-operation>+</button>
+
+                <button class="btn btn-3d" data-number>.</button>
+                <button class="btn btn-3d" data-number>0</button>
+                <button class="btn btn-action btn-3d col-span-2" data-equals>EXECUTE</button>
+            </div>
+
+            <div class="device-footer">
+                <div class="status-light"></div>
+                <span class="status-text">SYSTEM ACTIVE</span>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
